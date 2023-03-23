@@ -9,10 +9,10 @@ This game is inspired by the bomb scenes in movies and TV shows, particularly th
 
 #### Gameplay
 A work through of an example your game session 
-
-#### Game Elements
+ 
+#### Game Elements   [**Link**](https://github.com/IMetex/In-Time/blob/4e1b9fda25f53b9e19a6723c50e0b533560bab03/GameImages/Game%20Elements.png)
    
-- **Core Gameplay**
+- **Core Gameplay**  [**Link**](https://github.com/IMetex/In-Time/blob/4e1b9fda25f53b9e19a6723c50e0b533560bab03/GameImages/Core%20Loops.png)
     
     - Movement 
     
@@ -52,6 +52,7 @@ A work through of an example your game session
       
       - Victory : f they win, they move on to the next level.
       - Lose : If they lose, they replay the same level
+      
  - **Controls**
       - A : Left
       - D : Rigth
@@ -59,12 +60,21 @@ A work through of an example your game session
       - S : Back
       - Spacae : Jump
   
-      
+#### Game Image
+
+  - **Main Menu**
+<img src="https://github.com/IMetex/In-Time/blob/4e1b9fda25f53b9e19a6723c50e0b533560bab03/GameImages/Screenshot_3.png" alt=“” width="450" height="value">
     
-    
+  - **Game Menu**
+ <img src="https://github.com/IMetex/In-Time/blob/4e1b9fda25f53b9e19a6723c50e0b533560bab03/GameImages/Screenshot_4.png" alt= “” width="450" height="value">
+ <img src="https://github.com/IMetex/In-Time/blob/4e1b9fda25f53b9e19a6723c50e0b533560bab03/GameImages/Screenshot_2.png" alt= “” width="450" height="value">
    
 
+#### Game Using Asset
 
+  - [Character](https://assetstore.unity.com/packages/3d/characters/3d-monster-bomb-145319)
+  - [Enviroment](https://kaylousberg.itch.io/kaykit-dungeon)
+  - [UI](https://penzilla.itch.io/handdrawn-vector-icon-pack)
 
 
 
