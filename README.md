@@ -1,2 +1,7 @@
-# In-Time
-IMetex/In-Time
+#IN TIME
+##Game Design Document
+##4.03.2023
+
+
+
+
