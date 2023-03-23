@@ -34,8 +34,32 @@ A work through of an example your game session
        
        > If they lose, they replay the same level
      
+ 
+ - **Side Mechanics**
+      
+    - Power Ups(Future)
+      > Shield
+       
+      > Extra Time Bonus
+      
+      > Speed
      
-   
+ - **Collectables**
+      
+      - Gold
+      
+ - **Progression**
+      
+      - Victory : f they win, they move on to the next level.
+      - Lose : If they lose, they replay the same level
+ - **Controls**
+      - A : Left
+      - D : Rigth
+      - W : Forward
+      - S : Back
+      - Spacae : Jump
+  
+      
     
     
    
