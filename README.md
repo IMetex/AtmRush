@@ -1,23 +1,18 @@
-## **IN TIME**
-### Game Design Document
+## **IN TIME** 
+#### Unity Version: 2020.3.15f2
 
-#### Overview
-The game of controlling a bomb and taking it to a certain point within a certain time.
+### Overview
+> Control a bomb and get it to the finish line in a certain time without the bomb exploding, avoiding obstacles.
 
-#### Plot&Setting
-This game is inspired by the bomb scenes in movies and TV shows, particularly the ones that involve a race against time. 
+### Gameplay
+> It is a simple platformer.
+> - ####  [Gameplay Loop Image](https://user-images.githubusercontent.com/73601795/256975181-0cda9a13-3f6f-454b-9c23-9381fe0f861e.png)
+> - ####  [Game Elements Image](https://user-images.githubusercontent.com/73601795/256975180-b2335056-3f3f-4cc3-b4e2-5c56fb48822e.png)
 
-#### Gameplay
-A work through of an example your game session 
- 
-#### Game Elements   [**Link**](https://github.com/IMetex/In-Time/blob/4e1b9fda25f53b9e19a6723c50e0b533560bab03/GameImages/Game%20Elements.png)
-   
-- **Core Gameplay**  [**Link**](https://github.com/IMetex/In-Time/blob/4e1b9fda25f53b9e19a6723c50e0b533560bab03/GameImages/Core%20Loops.png)
-    
-    - Movement 
-    
-       >The character can move forward, backward, right, and left
- 
+### Core Gameplay
+
+    - Movement
+       > The character can move forward, backward, right, and left
        > The character can jump
       
      - Time
@@ -27,54 +22,47 @@ A work through of an example your game session
        > It starts on a pre-built platform map
     
     - Win/Lose
-     
-       > If the player reaches the door within a certain number of seconds without getting stuck on platforms and obstacles, they win; otherwise, they lose the game.
-       
+       > If the player reaches the door within a certain number of seconds without getting stuck on platforms and obstacles,they win; 
+         otherwise, they lose the game.
        > If they win, they move on to the next level.
-       
        > If they lose, they replay the same level
-     
- 
- - **Side Mechanics**
-      
-    - Power Ups(Future)
-      > Shield
        
-      > Extra Time Bonus
+    - Side Mechanics
+       > Power Ups(Future)
+       > Shield
+       > Extra Time Bonu
+       > Speed
+       
+    - Collectables
+       > Gold
+       
+    - Progression
+      > Victory : f they win, they move on to the next level.
+      > Lose : If they lose, they replay the same level
       
-      > Speed
-     
- - **Collectables**
-      
-      - Gold
-      
- - **Progression**
-      
-      - Victory : f they win, they move on to the next level.
-      - Lose : If they lose, they replay the same level
-      
- - **Controls**
-      - A : Left
-      - D : Rigth
-      - W : Forward
-      - S : Back
-      - Spacae : Jump
-  
-#### Game Image
+    - Controls
+      > A : Left
+      > D : Rigth
+      > W : Forward
+      > S : Back
+      > Space : Jump
 
-  - **Main Menu**
-<img src="https://github.com/IMetex/In-Time/blob/4e1b9fda25f53b9e19a6723c50e0b533560bab03/GameImages/Screenshot_3.png" alt=“” width="450" height="value">
+### In Game Fotoage
+<p align="left">
+  <img src="https://user-images.githubusercontent.com/73601795/256975032-40bf5576-37bd-423a-8381-ae459b443444.gif" width="475" hspace="10"/>
+  <img src="https://user-images.githubusercontent.com/73601795/256975029-141b57c3-d24d-4307-935c-0fc715dcf6dc.gif" width="475" hspace="15" />
+</p>
+
+<p align="left">
+  <img src="https://user-images.githubusercontent.com/73601795/256975026-5a08f393-180d-44a0-a43f-63edcf2f700b.png" width="475" hspace="10" />
+  <img src="https://user-images.githubusercontent.com/73601795/256975021-c1a70b03-88ac-48be-b1fa-6175458e9583.png" width="475" hspace="1"/>
+</p>
+
     
-  - **Game Menu**
- <img src="https://github.com/IMetex/In-Time/blob/4e1b9fda25f53b9e19a6723c50e0b533560bab03/GameImages/Screenshot_4.png" alt= “” width="450" height="value">
- <img src="https://github.com/IMetex/In-Time/blob/4e1b9fda25f53b9e19a6723c50e0b533560bab03/GameImages/Screenshot_2.png" alt= “” width="450" height="value">
-   
-
-#### Game Using Asset
+### Game Used Assets
 
   - [Character](https://assetstore.unity.com/packages/3d/characters/3d-monster-bomb-145319)
   - [Enviroment](https://kaylousberg.itch.io/kaykit-dungeon)
   - [UI](https://penzilla.itch.io/handdrawn-vector-icon-pack)
-
 
 
