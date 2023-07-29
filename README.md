@@ -22,8 +22,8 @@
        > It starts on a pre-built platform map
     
     - Win/Lose
-       > If the player reaches the door within a certain number of seconds without getting stuck on platforms and obstacles,
-         they win; otherwise, they lose the game.
+       > Reach the door within a certain number of seconds without getting stuck on platforms and obstacles.
+         If you succeed, you win! Otherwise, you lose.
        > If they win, they move on to the next level.
        > If they lose, they replay the same level
        
