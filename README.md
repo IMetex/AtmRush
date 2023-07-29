@@ -49,13 +49,13 @@
 
 ### In Game Fotoage
 <p align="left">
-  <img src="https://user-images.githubusercontent.com/73601795/256975032-40bf5576-37bd-423a-8381-ae459b443444.gif" width="475" hspace="10"/>
-  <img src="https://user-images.githubusercontent.com/73601795/256975029-141b57c3-d24d-4307-935c-0fc715dcf6dc.gif" width="475" hspace="15" />
+  <img src="https://user-images.githubusercontent.com/73601795/256975032-40bf5576-37bd-423a-8381-ae459b443444.gif" width="450" hspace="10"/>
+  <img src="https://user-images.githubusercontent.com/73601795/256975029-141b57c3-d24d-4307-935c-0fc715dcf6dc.gif" width="450" hspace="15" />
 </p>
 
 <p align="left">
-  <img src="https://user-images.githubusercontent.com/73601795/256975026-5a08f393-180d-44a0-a43f-63edcf2f700b.png" width="475" hspace="10" />
-  <img src="https://user-images.githubusercontent.com/73601795/256975021-c1a70b03-88ac-48be-b1fa-6175458e9583.png" width="475" hspace="1"/>
+  <img src="https://user-images.githubusercontent.com/73601795/256975026-5a08f393-180d-44a0-a43f-63edcf2f700b.png" width="450" hspace="10" />
+  <img src="https://user-images.githubusercontent.com/73601795/256975021-c1a70b03-88ac-48be-b1fa-6175458e9583.png" width="450" hspace="1"/>
 </p>
 
     
