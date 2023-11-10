@@ -1,53 +1,64 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
-using TMPro;
-using UnityEngine.UI;
 using DG.Tweening;
+using Singleton;
+using Stack;
+using UnityEngine;
 
-public class StackManager : Singletion<StackManager>
+namespace Manager
 {
-    
-    public int stackValue;
-    public TMP_Text stackValueText;
-    
-    public void StackObject(GameObject other, int index)
+    public class StackManager : Singleton<StackManager>
     {
-        stackValue++;
-        stackValueText.text = stackValue.ToString();
-        
-        other.gameObject.transform.parent = transform;
-        Vector3 newPos = PlayerManager.Instance.collected[index].transform.localPosition;
-        if (index == 0)
+        public void StackObject(GameObject obj, int index)
         {
-            newPos.z += 0.4f;
+            ScoreManager.Instance.ScoreValue++;
+            ScoreManager.Instance._scoreText.text = ScoreManager.Instance.ScoreValue.ToString();
+            obj.gameObject.transform.parent = transform;
+            Vector3 newPosition = StackLerpMovement.Instance.collected[index].transform.localPosition;
+
+            if (index == 0)
+            {
+                newPosition.z = 1f;
+            }
+
+            newPosition.z += 1f;
+            newPosition.y = 0.3f;
+
+            obj.transform.localPosition = newPosition;
+            StackLerpMovement.Instance.collected.Add(obj);
+            StartCoroutine(MakeObjectBigger());
         }
 
-        newPos.z += 1f;
-        newPos.y = 0f;
-
-        other.transform.localPosition = newPos;
-        PlayerManager.Instance.collected.Add(other);
-        StartCoroutine(MakeObjectsBigger());
-    }
-
-    public IEnumerator MakeObjectsBigger()
-    {
-        for (int i = PlayerManager.Instance.collected.Count - 1; i >= 1; i--)
+        public IEnumerator MakeObjectBigger()
         {
-            int index = i;
-            Vector3 scale = Vector3.zero;
-
-            if (PlayerManager.Instance.collected[index].gameObject.tag == "Collect")
+            for (int i = StackLerpMovement.Instance.collected.Count - 1; i >= 1; i--)
             {
-                scale = new Vector3(1, 1, 1);
-                Vector3 doScale = scale * 1.5f;
-                PlayerManager.Instance.collected[index].transform.DOScale(doScale, 0.06f).OnComplete(() =>
-                    PlayerManager.Instance.collected[index].transform.DOScale(scale, 0.06f));
+                int index = i;
 
-                yield return new WaitForSeconds(0.02f);
+                if (StackLerpMovement.Instance.collected[index].gameObject.CompareTag("Money"))
+                {
+                    DOScaleObject(i);
+                    yield return new WaitForSeconds(0.02f);
+                }
+                else if (StackLerpMovement.Instance.collected[index].gameObject.CompareTag("Gold"))
+                {
+                    DOScaleObject(i);
+                    yield return new WaitForSeconds(0.02f);
+                }
+                else if (StackLerpMovement.Instance.collected[index].gameObject.CompareTag("Diamond"))
+                {
+                    DOScaleObject(i);
+                    yield return new WaitForSeconds(0.02f);
+                }
             }
+        }
+
+        public void DOScaleObject(int index)
+        {
+            Vector3 scale = new Vector3(1, 1, 1);
+            Vector3 doScale = scale * 1.5f;
+            StackLerpMovement.Instance.collected[index].transform.DOScale(doScale, 0.06f).OnComplete(() =>
+                StackLerpMovement.Instance.collected[index].transform.DOScale(scale, 0.06f));
         }
     }
 }

@@ -5,9 +5,15 @@ TagManager:
   serializedVersion: 2
   tags:
   - Collect
-  - Collectable
-  - Gate
-  - ScoreBoard
+  - CollectableMoney
+  - CollectableGold
+  - CollectableDiamond
+  - Money
+  - Gold
+  - Diamond
+  - Spine
+  - ATM
+  - Card
   layers:
   - Default
   - TransparentFX
